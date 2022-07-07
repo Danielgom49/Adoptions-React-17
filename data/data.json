@@ -1,0 +1,217 @@
+{
+  "gatos": [
+    {
+      "id": 1,
+      "img": "../images/gato1.jpg",
+      "imgInfo": "../images/gatoInfo1.png",
+      "imgP1": "../images/carac3.png",
+      "imgP2": "../images/carac2.png",
+      "imgP3": "../images/carac4.png",
+      "nombre": "Matilde",
+      "raza": "British Shorthair",
+      "descripcion": "Matilde es la mejor guarda espaldas, siempre esta hay para conversar y recibirá cada día con un fuerte cariño. Fue rescatada y busca una persona que le pueda dar todo el amor que ella necesita.",
+      "edad": "6 meses",
+      "direccion": "4140 Parker Rd. Allentown, New Mexico 31134",
+      "personalidad": [
+        "Juguetón",
+        "Inquieto",
+        "Tierno"
+      ]
+    },
+    {
+      "id": 2,
+      "img": "../images/gato2.jpg",
+      "imgInfo": "../images/gatoInfo2.png",
+      "imgP1": "../images/carac1.png",
+      "imgP2": "../images/carac2.png",
+      "imgP3": "../images/carac4.png",
+      "nombre": "Pelusa",
+      "raza": "Birmano",
+      "descripcion": "Pelusa es la mejor guarda espaldas, siempre esta hay para conversar y recibirá cada día con un fuerte cariño. Fue rescatada y busca una persona que le pueda dar todo el amor que ella necesita.",
+      "edad": "4 meses",
+      "direccion": "4140 Parker Rd. Allentown, New Mexico 31134",
+      "personalidad": [
+        "Cariñosa",
+        "Inquieto",
+        "Tierno"
+      ]
+    },
+    {
+      "id": 3,
+      "img": "../images/gato3.jpg",
+      "imgInfo": "../images/gatoInfo3.png",
+      "imgP1": "../images/carac3.png",
+      "imgP2": "../images/carac2.png",
+      "imgP3": "../images/carac4.png",
+      "nombre": "Kity",
+      "raza": "Bombay",
+      "descripcion": "Kity es la mejor guarda espaldas, siempre esta hay para conversar y recibirá cada día con un fuerte cariño. Fue rescatada y busca una persona que le pueda dar todo el amor que ella necesita.",
+      "edad": "5 meses",
+      "direccion": "4140 Parker Rd. Allentown, New Mexico 31134",
+      "personalidad": [
+        "Juguetón",
+        "Inquieto",
+        "Tierno"
+      ]
+    },
+    {
+      "id": 4,
+      "img": "../images/gato4.jpg",
+      "imgInfo": "../images/gatoInfo4.png",
+      "imgP1": "../images/carac3.png",
+      "imgP2": "../images/carac2.png",
+      "imgP3": "../images/carac1.png",
+      "nombre": "Bombón",
+      "raza": "Gato americano",
+      "descripcion": "Bombón es la mejor guarda espaldas, siempre esta hay para conversar y recibirá cada día con un fuerte cariño. Fue rescatado y busca una persona que le pueda dar todo el amor que él necesita.",
+      "edad": "7 meses",
+      "direccion": "4140 Parker Rd. Allentown, New Mexico 31134",
+      "personalidad": [
+        "Juguetón",
+        "Inquieto",
+        "Cariñoso"
+      ]
+    }
+  ],
+  "perros": [
+    {
+      "id": 1,
+      "img": "../images/perro1.jpg",
+      "imgInfo": "../images/perroInfo1.png",
+      "imgP1": "../images/carac1.png",
+      "imgP2": "../images/carac4.png",
+      "imgP3": "../images/carac3.png",
+      "nombre": "Chester",
+      "raza": "Golden retriever",
+      "descripcion": "Chester es un perrito muy lindo y tiener, tiene 3 hermanitos más y por cuestiones de espacio no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
+      "edad": "4 meses",
+      "direccion": "4140 Parker Rd. Allentown, New Mexico 31134",
+      "personalidad": [
+        "Cariñoso",
+        "Tierno",
+        "Juguetón"
+      ]
+    },
+    {
+      "id": 2,
+      "img": "../images/perro2.jpg",
+      "imgInfo": "../images/perroInfo2.png",
+      "imgP1": "../images/carac4.png",
+      "imgP2": "../images/carac2.png",
+      "imgP3": "../images/carac3.png",
+      "nombre": "Papi",
+      "raza": "Chihuahua",
+      "descripcion": "Papi es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
+      "edad": "2 meses",
+      "direccion": "4140 Parker Rd. Allentown, New Mexico 31134",
+      "personalidad": [
+        "Tierno",
+        "Inquieto",
+        "Juguetón"
+      ]
+    },
+    {
+      "id": 3,
+      "img": "../images/perro3.jpg",
+      "imgInfo": "../images/perroInfo3.png",
+      "imgP1": "../images/carac1.png",
+      "imgP2": "../images/carac2.png",
+      "imgP3": "../images/carac3.png",
+      "nombre": "Rocky",
+      "raza": "Rottweiler",
+      "descripcion": "Rocky es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
+      "edad": "3 meses",
+      "direccion": "4140 Parker Rd. Allentown, New Mexico 31134",
+      "personalidad": [
+        "Cariñoso",
+        "Inquieto",
+        "Juguetón"
+      ]
+    },
+    {
+      "id": 4,
+      "img": "../images/perro4.jpg",
+      "imgInfo": "../images/perroInfo4.png",
+      "imgP1": "../images/carac1.png",
+      "imgP2": "../images/carac4.png",
+      "imgP3": "../images/carac3.png",
+      "nombre": "Pelusa",
+      "raza": "Bichón frisé",
+      "descripcion": "Pelusa es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
+      "edad": "3 meses",
+      "direccion": "4140 Parker Rd. Allentown, New Mexico 31134",
+      "personalidad": [
+        "Cariñoso",
+        "Tierno",
+        "Juguetón"
+      ]
+    }
+  ],
+  "usuarios": [
+    {
+      "name": "Juan213",
+      "lastname": "Rodriguez",
+      "img": "../images/Ellipse 10.png",
+      "email": "Juan.rodriguez@gmail.com",
+      "id": 1
+    }
+  ],
+  "favoritos": [
+    {
+      "nombre": "Chester",
+      "img": "../images/perro1.jpg",
+      "raza": "Golden retriever",
+      "id": 1
+    },
+    {
+      "nombre": "Kity",
+      "img": "../images/gato3.jpg",
+      "raza": "Bombay",
+      "id": 2
+    },
+    {
+      "nombre": "Rocky",
+      "img": "../images/perro3.jpg",
+      "raza": "Rottweiler",
+      "id": 3
+    },
+    {
+      "nombre": "Bombón",
+      "img": "../images/gato4.jpg",
+      "raza": "Gato americano",
+      "id": 4
+    },
+    {
+      "nombre": "Chester",
+      "img": "../images/perro1.jpg",
+      "raza": "Golden retriever",
+      "id": 5
+    },
+    {
+      "nombre": "Pelusa",
+      "img": "../images/gato2.jpg",
+      "raza": "Birmano",
+      "id": 6
+    },
+    {
+      "nombre": "Pelusa",
+      "img": "../images/gato2.jpg",
+      "raza": "Birmano",
+      "id": 7
+    }
+  ],
+  "mensajes": [
+    {
+      "mensaje": "Me gustaría verlo lo más pronto posible",
+      "hora": 10,
+      "minutos": 44,
+      "id": 1
+    },
+    {
+      "mensaje": "Hola",
+      "hora": 9,
+      "minutos": 23,
+      "id": 2
+    }
+  ]
+}

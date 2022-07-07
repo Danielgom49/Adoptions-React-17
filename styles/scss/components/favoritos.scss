@@ -1,0 +1,89 @@
+
+$breakpoints: (
+    sm : 375px,
+    lg : 1000px,
+    xl : 1200px,
+    1xl : 1400px
+);
+@mixin responsive($breakpoint){
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)){
+        @content;
+    }
+}
+.favoritos{
+    position: relative;
+    width: 375px;
+    height: 812px;
+    @include responsive(lg){
+        width: 1000px;
+        margin: 0px 60px;
+    }
+    @include responsive(xl){
+        width: 1000px;
+        margin: 0px 150px;
+    }
+    @include responsive(1xl){
+        width: 1000px;
+        margin: 0px 200px;
+    }
+}
+.titulo-favoritos{
+    position: absolute;
+    width: 327px;
+    height: 33px;
+    left: 24px;
+    top: 48px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    color: $title-color;
+    @include responsive(lg){
+        width: 1000px;
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        left: 0px;
+    }
+}
+
+#favoritos-perro-gatos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 327px;
+    height: 113px;
+    left: 24px;
+    top: 113px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+    @include responsive(lg){
+        width: 1000px;
+        left: 0px;
+        justify-content: center;
+    }
+}
+
+.favoritos1{
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+.perfil1{
+    width: 24px;
+    height: 24px;
+    left: 176.67px;
+    top: 24px;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 0px;
+}

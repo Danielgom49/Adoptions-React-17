@@ -1,0 +1,161 @@
+$title-color: #0E172C;
+$paragraph-color: #535353;
+$button-color: #FFFFFE;
+$background-button: #0E172C;
+
+
+$breakpoints: (
+    sm : 375px,
+    lg : 1000px,
+    xl : 1200px
+);
+@mixin responsive($breakpoint){
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)){
+        @content;
+    }
+}
+
+.container1{
+    width: 375px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    @include responsive(lg){
+        width: 1000px;
+        height: 400px;
+    }
+}
+.div-img1{
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+    @include responsive(lg){
+        margin: 10px 300px;
+    }
+    @include responsive(xl){
+        margin: 10px 420px;
+    }
+}
+.img1{
+    position: static;
+    width: 327px;
+    height: 327px;
+    left: 0px;
+    top: 0px;
+}
+
+.div-info1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 327px;
+    height: 129px;
+    left: 0px;
+    top: 360px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    @include responsive(lg){
+        width: 1000px;
+    }
+    @include responsive(xl){
+        width: 1200px;
+        align-items: center;
+    }
+}
+.titulo1{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: $title-color;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 0px;
+    @include responsive(lg){
+        font-size:20px;
+    }
+}
+.parrafo1{
+    position: static;
+    width: 327px;
+    height: 96px;
+    left: 0px;
+    top: 33px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: $paragraph-color;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 0px;
+    @include responsive(lg){
+        margin: 8px 340px;
+        font-size: 18px;
+    }
+    @include responsive(xl){
+        margin: 10px 440px;
+        font-size: 18px;
+    }
+}
+
+.div-button1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 327px;
+    height: 48px;
+    left: 24px;
+    top: 548px;
+    @include responsive(lg){
+        left: 0px;
+        width: 1000px;
+    }
+    @include responsive(xl){
+        left: 0px;
+        width: 1200px;
+    }
+}
+.button1{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 16px;
+    background: $background-button;
+    border-radius: 98px;
+    position: static;
+    width: 295px;
+    height: 16px;
+    left: 16px;
+    top: 16px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.0125em;
+    color: $button-color;
+    @include responsive(lg){
+        margin-bottom: 20px;
+    }
+}

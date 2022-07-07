@@ -1,0 +1,309 @@
+
+$breakpoints: (
+    sm : 375px,
+    lg : 1000px,
+    xl : 1200px,
+    1xl : 1400px
+);
+@mixin responsive($breakpoint){
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)){
+        @content;
+    }
+}
+.chat1{
+    position: relative;
+    width: 375px;
+    height: 812px;
+    @include responsive(lg){
+        width: 1000px;
+        margin: 0px 30px;
+    }
+    @include responsive(xl){
+        width: 1000px;
+        margin: 0px 150px;
+    }
+    @include responsive(1xl){
+        width: 1000px;
+        margin: 0px 200px;
+    }
+}
+
+.usuario{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    background: #FFFFFE;
+    @include responsive(lg){
+        justify-content:center;   
+    }
+}
+.back{
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 24px;
+    top: 24px;
+}
+.perfil-usuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    width: 375px;
+    height: 144px;
+    left: 0px;
+    top: 0px;
+}
+.img-usuario{
+    position: static;
+    left: 0px;
+    top: 0px;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+    border-radius: 50%;
+}
+
+.no-mensajes{
+    position: absolute;
+    width: 192px;
+    height: 24px;
+    left: 92px;
+    top: 293px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: $title-color;
+    display: none;
+}
+
+.mensaje-chat1{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+
+    position: absolute;
+    width: 327px;
+    height: 229px;
+    left: 24px;
+    top: 168px;
+    @include responsive(lg){
+        width: 1000px;
+        align-items: center;
+    }
+}
+.envio-mensaje{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+
+    position: static;
+    width: 327px;
+    height: 93px;
+    left: 0px;
+    top: 0px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 40px 0px;
+    @include responsive(lg){
+        width: 700px;
+    }
+}
+.hora-envio-mensaje{
+    width: 327px;
+    height: 19px;
+    left: 0px;
+    top: 0px;
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    color: #0E172C;
+    margin: 4px 0px;
+}
+.div-text-envio{
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    
+    position: static;
+    width: 255px;
+    height: 70px;
+    left: 72px;
+    top: 23px;
+    
+    background: #FFFFFE;
+    border-radius: 16px;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 4px 0px;
+    @include responsive(lg){
+        width: 300px;
+    }
+}
+.text-mensaje-envio{
+    position: static;
+    width: 223px;
+    height: 38px;
+    left: 16px;
+    top: 16px;
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+
+    color: #0E172C;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+    @include responsive(lg){
+        font-size:16px;
+    }
+}
+
+
+.recibir-mensaje{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 327px;
+    height: 112px;
+    left: 0px;
+    top: 117px;
+    margin: 24px 0px;
+    @include responsive(lg){
+        width: 700px;
+    }
+}
+.hora-recibir-mensaje{
+    position: static;
+    width: 327px;
+    height: 19px;
+    left: 0px;
+    top: 0px;
+    
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.005em;
+    
+    color: #0E172C;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 4px 0px;
+}
+.div-text-recibir{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+
+    position: static;
+    width: 255px;
+    height: 89px;
+    left: 0px;
+    top: 23px;
+
+    background: #535353;
+    border-radius: 16px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 4px 0px;
+    @include responsive(lg){
+        width: 300px;
+    }
+}
+.text-mensaje-recibir{
+    position: static;
+    width: 223px;
+    height: 57px;
+    left: 16px;
+    top: 16px;
+    
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    
+    color: #FFFFFE;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    @include responsive(lg){
+        font-size:16px;
+    }
+}
+
+
+.input-text{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 16px;
+    position: fixed;
+    width: 359px;
+    height: 48px;
+    left: 8px;
+    bottom: 10px;
+    border: 1px solid #535353;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: #FFFFFE;
+    @include responsive(lg){
+        width: 700px;
+        margin: 0px 150px;
+        left: 0px;
+    }
+    @include responsive(xl){
+        width: 800px;
+        margin: 0px 260px;
+
+    }
+    @include responsive(1xl){
+        width: 800px;
+        margin: 0px 300px;
+    }
+}

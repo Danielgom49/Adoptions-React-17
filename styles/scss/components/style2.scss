@@ -1,0 +1,155 @@
+$breakpoints: (
+    sm : 375px,
+    lg : 1000px,
+    xl : 1200px
+);
+@mixin responsive($breakpoint){
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)){
+        @content;
+    }
+}
+
+
+.container2{
+    width: 375px;
+    height: 812px;
+    @include responsive(lg){
+        width: 1000px;
+    }
+    @include responsive(xl){
+        width: 1200px;
+    }
+}
+
+.div-img2{
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin:10px 0px;
+    @include responsive(lg){
+        margin: 10px 300px;
+    }
+    @include responsive(xl){
+        margin: 10px 420px;
+    }
+}
+.img2{
+    position: static;
+    width: 327px;
+    height: 280px;
+    left: 0px;
+    top: 0px;
+}
+
+.div-info2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    height: 153px;
+    left: 0px;
+    top: 360px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 33px 0px;
+}
+.titulo2{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: $title-color;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 0px;
+    @include responsive(lg){
+        font-size: 20px;
+    }
+    @include responsive(xl){
+        font-size: 20px;
+    }
+}
+.parrafo2{
+    position: static;
+    width: 327px;
+    height: 120px;
+    left: 0px;
+    top: 33px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: $paragraph-color;
+    flex: none;
+    order: 1;
+    align-self: center;
+    flex-grow: 0;
+    margin: 8px 0px;
+    @include responsive(lg){
+        font-size: 18px;
+    }
+    @include responsive(xl){
+        font-size: 18px;
+    }
+}
+
+
+.div-button2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 327px;
+    height: 48px;
+    left: 24px;
+    top: 570px;
+    @include responsive(lg){
+        left: 0px;
+    }    
+    @include responsive(xl){
+        left: 0px;
+    }
+}
+
+
+.button2{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 16px;
+    background: $background-button;
+    border-radius: 98px;
+    position: static;
+    width: 295px;
+    height: 16px;
+    left: 16px;
+    top: 16px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.0125em;
+    color: $button-color;
+    flex: none;
+    @include responsive(lg){
+        margin-left: 660px;
+    }
+    @include responsive(xl){
+        margin-left: 860px;
+    }
+}

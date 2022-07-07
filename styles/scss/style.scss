@@ -1,0 +1,49 @@
+@import 'components/style1.scss';
+@import 'components/style2.scss';
+@import 'components/perfil.scss';
+@import 'components/mascotas.scss';
+@import 'components/favoritos.scss';
+@import 'components/mensaje.scss';
+@import 'components/chat.scss';
+@import 'components/infoMascota.scss';
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&family=Spartan:wght@500;600;900&family=Ubuntu:wght@300;400&display=swap');
+
+$background-color: #FEC7D7;
+
+$breakpoints: (
+    sm : 375px,
+    lg : 1000px,
+    xl : 1200px,
+    1xl : 1400px
+);
+@mixin responsive($breakpoint){
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)){
+        @content;
+    }
+}
+
+body{
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin:0;
+    
+
+}
+.logo{
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    left: 172px;
+    top: 300px;
+    @include responsive(lg){
+        margin: 0px 312px;
+    }
+    @include responsive(xl){
+        margin: 0px 412px;
+    }
+    @include responsive(1xl){
+        margin: 0px 512px;
+    }
+}

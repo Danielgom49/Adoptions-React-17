@@ -1,0 +1,340 @@
+$breakpoints: (
+    sm : 375px,
+    lg : 1000px,
+    xl : 1200px,
+    1xl : 1400px
+);
+@mixin responsive($breakpoint){
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)){
+        @content;
+    }
+}
+
+
+.mascotas{
+    position: relative;
+    width: 375px;
+    height: 927px;
+
+    @include responsive(lg){
+        width: 1000px;
+        margin: 0px 50px;
+    }
+    @include responsive(xl){
+        width: 1000px;
+        margin: 0px 150px;
+    }
+    @include responsive(1xl){
+        width: 1000px;
+        margin: 0px 200px;
+    }
+}
+
+.titulo-mascota{
+    position: absolute;
+    width: 327px;
+    height: 66px;
+    left: 24px;
+    top: 48px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    color: $title-color;
+
+    @include responsive(lg){
+        width: 1000px;
+        font-size:30px;
+    }
+}
+
+.categorias{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;   
+
+    position: absolute;
+    width: 327px;
+    height: 113px;
+    left: 24px;
+    top: 146px;
+    @include responsive(lg){
+        width: 1000px;
+        align-items: center;
+    }
+}
+.titulo-categoria{
+    position: static;
+    width: 327px;
+    height: 25px;
+    left: 0px;
+    top: 0px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.0015em;
+    color: $title-color;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+    @include responsive(lg){
+        font-size:25px;
+    }
+}
+.seccion-categorias{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 327px;
+    height: 80px;
+    left: 0px;
+    top: 33px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 8px 0px;
+    @include responsive(lg){
+        width: 1000px;
+        justify-content: center;
+    }
+}
+
+.categoria-perros{
+    @include responsive(lg){
+        padding-right: 50px;
+    }
+}
+.boton-perro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    position: static;
+    width: 156px;   
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    background: #0E172C;
+    opacity: 0.5;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    @include responsive(lg){
+        margin: 0px 10px;
+    }
+}
+.boton-perro:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.parrafo-perro{
+    position: static;
+    width: 49px;
+    height: 24px;
+    left: 88px;
+    top: 28px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFE;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 16px;
+}
+
+.categoria-gatos{
+    @include responsive(lg){
+        padding-right: 60px;
+    }
+}
+.boton-gato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    position: static;
+    width: 155px;
+    height: 80px;
+    left: 172px;
+    top: 0px;
+    background: #0E172C;
+    opacity: 0.5;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 16px;
+    @include responsive(lg){
+        margin: 0px 10px;
+    }
+}
+.boton-gato:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.parrafo-gato{
+    position: static;
+    width: 44px;
+    height: 24px;
+    left: 88px;
+    top: 28px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #FFFFFE;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 16px;
+}
+
+#cards-perro-gatos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 327px;
+    height: 548px;
+    left: 24px;
+    top: 283px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+    @include responsive(lg){
+        width: 1000px;
+        justify-content: center;
+    }
+}
+#showP{
+    display: flex;
+    flex-wrap: wrap;
+}
+#showG{
+    display: flex;
+    flex-wrap: wrap;
+}
+.perro-fondo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    position: static;
+    width: 120px;
+    height: 190px;
+    left: 0px;
+    top: 0px;
+    border-radius: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 24px 5px;
+    
+    @include responsive(lg){
+        margin: 24px 30px;
+    }
+}
+.perro-fondo{
+    cursor: pointer;
+}
+.gato-fondo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    position: static;
+    width: 120px;
+    height: 190px;
+    left: 0px;
+    top: 0px;
+    border-radius: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 24px 5px;
+    @include responsive(lg){
+        margin: 24px 30px;
+    }
+}
+.gato-fondo{
+    cursor: pointer;
+}
+.nombre-mascota{
+    position: static;
+    width: 124px;
+    height: 19px;
+    left: 16px;
+    top: 196px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.005em;
+
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+    @include responsive(lg){
+        font-size:16px;
+    }
+}
+.raza{
+    position: static;
+    width: 124px;
+    height: 19px;
+    left: 16px;
+    top: 215px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.005em;
+
+    color: #CDCDCD;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+
+    @include responsive(lg){
+        font-size:16px
+    }
+}
+
+
+
+.perfil1{
+    width: 24px;
+    height: 24px;
+    left: 176.67px;
+    top: 24px;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 0px;
+}

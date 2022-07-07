@@ -1,0 +1,227 @@
+
+$breakpoints: (
+    sm : 375px,
+    lg : 1000px,
+    xl : 1200px,
+    1xl : 1400px
+);
+@mixin responsive($breakpoint){
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)){
+        @content;
+    }
+}
+.mensajes{
+    position: relative;
+    width: 375px;
+    height: 812px;
+    @include responsive(lg){
+        width: 1000px;
+        margin: 0px 50px;
+    }
+    @include responsive(xl){
+        width: 1000px;
+        margin: 0px 150px;
+    }
+    @include responsive(1xl){
+        width: 1000px;
+        margin: 0px 200px;
+    }
+
+}
+.titulo-mensajes{
+    position: absolute;
+    width: 327px;
+    height: 33px;
+    left: 24px;
+    top: 48px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    color: $title-color;
+    @include responsive(lg){
+        width: 1000px;
+        font-size: 30px;
+        text-align: center;
+        left: 0px;
+    }
+}
+
+.chat{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    position: absolute;
+    width: 327px;
+    height: 80px;
+    left: 24px;
+    top: 105px;
+    background: #FFFFFE;
+    border-radius: 8px;
+    @include responsive(lg){
+        width: 500px;
+        height: 100px;
+        margin: 20px 200px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+}
+.redirrecion-chat{
+    text-decoration: none;
+}
+.chat-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    position: static;
+    width: 311px;
+    height: 64px;
+    left: 8px;
+    top: 8px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 0px;
+    @include responsive(lg){
+        width: 500px;
+        justify-content: center;
+        left:0px;
+    }
+}
+.foto-chat{
+    position: static;
+    width: 64px;
+    height: 64px;
+    left: 0px;
+    top: 0px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+    @include responsive(lg){
+        margin: 0px 15px;
+    }
+}
+.data-chat{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 207px;
+    height: 81px;
+    left: 72px;
+    top: 0px;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+    margin: 0px 6px;
+}
+.chat-hora-nombre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    position: static;
+    width: 207px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+    @include responsive(lg){
+        width: 350px;
+    }
+}
+.nombre-chat{
+    position: static;
+    width: 176px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: $title-color;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 8px
+}
+.hora-chat{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    color: $title-color;
+    @include responsive(lg){
+        font-size: 15px;
+    }
+}
+.mensaje-chat{
+    position: static;
+    width: 207px;
+    height: 57px;
+    left: 0px;
+    top: 24px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: $title-color;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+.img-flecha {
+    position: static;
+    width: 24px;
+    height: 24px;
+    left: 287px;
+    top: 28.5px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+    @include responsive(lg){
+        left: 0px;
+        margin-right: 20px;
+    }
+}
+
+
+.perfil1{
+    width: 24px;
+    height: 24px;
+    left: 176.67px;
+    top: 24px;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
